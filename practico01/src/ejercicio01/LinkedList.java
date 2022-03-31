@@ -11,7 +11,7 @@ public class LinkedList<T> {
     }
 
     public void insertFront(T o) {
-        first = new Node(o, first);
+        first = new Node<>(o, first);
         size++;
     }
 
@@ -38,11 +38,11 @@ public class LinkedList<T> {
         if (index < 0 || index >= size) {
             return null;
         }
-        Node current = first;
+        Node<T> current = first;
         for (int i = 0; i < index; i++) {
             current = current.getNext();
         }
-        return (T) current.getValue();
+        return current.getValue();
     }
 
     public String toString() {
@@ -50,7 +50,7 @@ public class LinkedList<T> {
             return "";
         }
         StringBuilder result = new StringBuilder();
-        Node current = first;
+        Node<T> current = first;
         do {
             result.append(current.getValue().toString());
             current = current.getNext();

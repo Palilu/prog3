@@ -4,10 +4,6 @@ public class Node<T> {
     private T value;
     private Node<T> next;
 
-    public Node() {
-        value = null;
-        next = null;
-    }
     public Node(T o, Node n) {
         setValue(o);
         setNext(n);
@@ -21,7 +17,7 @@ public class Node<T> {
         value = o;
     }
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
