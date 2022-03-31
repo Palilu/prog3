@@ -20,6 +20,12 @@ public class Main {
         }
         // Q: ¿Existe alguna ventaja computacional a la hora de recorrer la lista
         //    de principio a fin si se cuenta con un iterador?
-        // A: No
+        // A: No, pero se puede usar en un foreach que queda más cheto
+
+//        ejercicio01.LinkedList<Integer> myNonIterableLinkedList = new ejercicio01.LinkedList<>();
+//        for (Integer value : myNonIterableLinkedList) {
+//            System.out.println(value);
+//        }
+        // La del ejercicio 01 que no es iterable da un error de compilación.
     }
 }
