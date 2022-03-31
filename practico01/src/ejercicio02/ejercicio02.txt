@@ -1,0 +1,20 @@
+Ejercicio 2.
+
+Considerando la implementación de la Lista realizado en el ejercicio anterior, comparar la
+complejidad computacional contra un array en las siguientes operaciones:
+
+1.- Insertar al principio.
+2.- Buscar un elemento en una posición.
+3.- Determinar la cantidad de elementos.
+
+Array:
+
+1.- Insertar al principio = O(n)
+2.- Buscar un elemento en una posición = O(1)
+3.- Determinar la cantidad de elementos = O(1)
+
+LinkedList:
+
+1.- Insertar al principio = O(1)
+2.- Buscar un elemento en una posición = O(n)
+3.- Determinar la cantidad de elementos = O(1)
