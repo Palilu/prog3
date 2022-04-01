@@ -15,6 +15,7 @@ public class Main {
         myLinkedList.insertFront(2);
         myLinkedList.insertFront(1);
         myLinkedList.print();
+
         for (Integer value : myLinkedList) {
             System.out.println(value);
         }
