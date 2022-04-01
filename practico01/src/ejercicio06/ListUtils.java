@@ -6,15 +6,6 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * Ejercicio 6.
- *
- * Escriba un procedimiento que dadas dos listas construya otra con los elementos comunes,
- * suponiendo que:
- *
- * a) Las listas están desordenadas y la lista resultante debe quedar ordenada.
- * b) Las listas están ordenadas y la lista resultante debe mantenerse ordenada.
- */
 public class ListUtils<T extends Comparable<T>> {
 
     /**
@@ -43,9 +34,12 @@ public class ListUtils<T extends Comparable<T>> {
     public List<T> sortedIntersectionA2(List<T> list1, List<T> list2) {
         Map<T, Long> count = list1.stream()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        return new ArrayList<>(list2.stream()
+        return list2.stream()
                 .filter(count::containsKey)
-                .collect(Collectors.toSet()));
+                .collect(Collectors.toSet())
+                .stream()
+                .sorted()
+                .collect(Collectors.toList());
     }
 
     /**

@@ -1,5 +1,10 @@
 package ejercicio09;
 
+/**
+ * Ejercicio 9.
+ *
+ * Verificar si una cadena de texto es palindroma (capicua).
+ */
 public class Main {
 
     private static PalindromeUtils palindromaUtils = new PalindromeUtils();

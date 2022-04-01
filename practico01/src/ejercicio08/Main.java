@@ -1,5 +1,11 @@
 package ejercicio08;
 
+/**
+ * Ejercicio 8.
+ *
+ * Considerando la implementación de Lista del ejercicio 1, realice una Lista doblemente
+ * vinculada.
+ */
 public class Main {
 
     public static void main(String[] args) {

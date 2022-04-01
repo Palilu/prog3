@@ -3,12 +3,6 @@ package ejercicio07;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Ejercicio 7.
- *
- * Escriba una función que dadas dos listas construya otra con los elementos que están en la
- * primera pero no en la segunda.
- */
 public class ListUtils<T> extends ejercicio06.ListUtils {
 
     /**
