@@ -17,7 +17,7 @@ public class ArrayUtils<T extends Comparable<T>> extends ejercicio01.ArrayUtils<
             return Optional.empty();
         }
         // Sino obtengo el medio
-        int middle = (from + to )/ 2; // El arreglo está ordenado
+        int middle = (from + to )/ 2;
         // Y el resultado de la comparación del objetivo con el valor del medio
         int compare = target.compareTo(array[middle]);
         if (compare == 0) { // Si es igual lo encontré
